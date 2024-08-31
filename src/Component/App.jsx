@@ -63,7 +63,7 @@ function App() {
       <table id="cryptoTable">
         <thead>
           <tr>
-            {/* <th>Image</th> */}
+            <th>Image</th>
             <th>Name</th>
             <th>Symbol</th>
             <th>Price</th>
@@ -75,7 +75,9 @@ function App() {
         <tbody id="tableBody">
           {sortedCoins.map((coin) => (
             <tr key={coin.id}>
-              {/* <td><img src={coin.image}/></td> */}
+              <td>
+              <img src={coin.image} alt={coin.name} style={{ width: '40px', height: '40px' }} />
+              </td>
               <td>{coin.name}</td>
               <td>{coin.symbol}</td>
               <td>{coin.current_price}</td>
