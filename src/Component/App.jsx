@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   const [data, setData] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
-  const [sortOrder, setSortOrder] = useState('asc');
+  const [sortOrder, setSortOrder] = useState('desc');
 
   useEffect(() => {
     fetch(
